@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Atelier | Athelgard</title>
+  <meta name="description" content="Private Athelgard atelier dashboard for managing watches and the house edit.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="admin">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main admin-main">
+      <section class="page-intro reveal">
+        <p class="section-kicker">Private Atelier</p>
+        <h1>Curate the house edit.</h1>
+        <p>Authenticated access only. Add references, update the live catalogue, or remove releases from the active showroom presentation.</p>
+      </section>
+
+      <section class="admin-toolbar reveal">
+        <div>
+          <p class="section-kicker">Session</p>
+          <p class="admin-toolbar-copy">This dashboard is served behind authenticated access and backed by the Athelgard SQL catalogue.</p>
+        </div>
+        <div class="admin-toolbar-actions">
+          <span class="status-chip" data-admin-session-label>Authenticated</span>
+          <button class="button button-secondary" type="button" data-admin-logout>Sign Out</button>
+        </div>
+      </section>
+
+      <section class="admin-layout">
+        <form class="admin-form reveal" data-admin-form>
+          <div class="form-section">
+            <p class="form-label">Reference Details</p>
+            <div class="field-grid">
+              <label>
+                <span>Watch Name</span>
+                <input type="text" name="name" placeholder="Nocturne Classic" required>
+              </label>
+              <label>
+                <span>Price</span>
+                <input type="number" name="price" placeholder="12800" min="0" step="100" required>
+              </label>
+              <label>
+                <span>Category</span>
+                <select name="category">
+                  <option value="classic">Classic</option>
+                  <option value="sporty">Sporty</option>
+                  <option value="vintage">Vintage</option>
+                </select>
+              </label>
+              <label>
+                <span>Image URL</span>
+                <input type="text" name="image" placeholder="Optional image URL or data URI">
+              </label>
+              <label class="field-span-2">
+                <span>Description</span>
+                <textarea name="description" rows="4" placeholder="A short editorial description of the watch." required></textarea>
+              </label>
+            </div>
+          </div>
+          <button class="button button-primary" type="submit">Add Reference</button>
+        </form>
+
+        <section class="inventory-panel reveal">
+          <div class="inventory-head">
+            <div>
+              <p class="section-kicker">Live Inventory</p>
+              <h2>Current SQL-backed references.</h2>
+            </div>
+            <button class="button button-secondary" type="button" data-reset-inventory>Reset Defaults</button>
+          </div>
+          <div class="admin-list" data-admin-list></div>
+        </section>
+      </section>
+
+      <section class="orders-panel reveal">
+        <div class="inventory-head">
+          <div>
+            <p class="section-kicker">Order Ledger</p>
+            <h2>Placed orders and fulfilment status.</h2>
+          </div>
+        </div>
+        <div class="orders-list" data-admin-orders></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Private atelier dashboard with authenticated access.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

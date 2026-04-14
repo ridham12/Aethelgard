@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Athelgard</title>
+  <meta name="description" content="Review your selected Athelgard timepieces with an elegant, minimal cart experience.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html" class="is-current">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-intro reveal">
+        <p class="section-kicker">Selection Tray</p>
+        <h1>Your chosen references.</h1>
+        <p>Review quantities, refine the selection, or continue into the secure Athelgard buy-in experience.</p>
+      </section>
+
+      <section class="cart-layout">
+        <div class="cart-list reveal" data-cart-items></div>
+        <aside class="cart-summary reveal" data-cart-summary></aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Complimentary insured delivery on all current references.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

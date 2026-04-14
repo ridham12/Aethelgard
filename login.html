@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Login | Athelgard</title>
+  <meta name="description" content="Secure login for the private Athelgard atelier dashboard.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="login">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="auth-shell reveal">
+        <div class="page-intro auth-intro">
+          <p class="section-kicker">Restricted Access</p>
+          <h1>Private atelier entry.</h1>
+          <p>Access to the Athelgard admin dashboard is reserved for authorized internal users only.</p>
+        </div>
+
+        <form class="admin-form auth-form reveal" data-admin-login-form>
+          <div class="form-section">
+            <p class="form-label">Administrator Login</p>
+            <div class="field-grid">
+              <label class="field-span-2">
+                <span>Username</span>
+                <input type="text" name="username" autocomplete="username" required>
+              </label>
+              <label class="field-span-2">
+                <span>Password</span>
+                <input type="password" name="password" autocomplete="current-password" required>
+              </label>
+            </div>
+          </div>
+          <div class="checkout-actions">
+            <button class="button button-primary" type="submit">Enter Dashboard</button>
+            <p class="checkout-note" data-login-feedback>Use the configured atelier credentials.</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Protected access for internal atelier operations.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

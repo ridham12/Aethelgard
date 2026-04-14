@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail | Athelgard</title>
+  <meta name="description" content="Discover Athelgard timepieces with elevated product storytelling, movement details, and refined purchase pathways.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="product">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div data-product-detail></div>
+      <section class="related-products section-spacing">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Continue Exploring</p>
+          <h2>Other references from the house.</h2>
+        </div>
+        <div class="product-grid" data-related-products></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Every reference is reviewed before dispatch.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

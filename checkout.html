@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Athelgard</title>
+  <meta name="description" content="Complete your Athelgard order with a refined and trustworthy checkout experience.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-intro reveal">
+        <p class="section-kicker">Secure Buy-In</p>
+        <h1>Complete the order with calm, clarity, and confidence.</h1>
+        <p>Shipping, payment, and delivery details are presented with the same restraint as the collection itself.</p>
+      </section>
+
+      <section class="checkout-layout">
+        <form class="checkout-form reveal" data-checkout-form>
+          <div class="form-section">
+            <p class="form-label">Contact</p>
+            <div class="field-grid">
+              <label>
+                <span>Full Name</span>
+                <input type="text" name="fullName" placeholder="Arthur Delacroix" required>
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="arthur@example.com" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <p class="form-label">Shipping</p>
+            <div class="field-grid">
+              <label class="field-span-2">
+                <span>Address</span>
+                <input type="text" name="address" placeholder="12 Rue de l'Observatoire" required>
+              </label>
+              <label>
+                <span>City</span>
+                <input type="text" name="city" placeholder="Geneva" required>
+              </label>
+              <label>
+                <span>Postal Code</span>
+                <input type="text" name="postalCode" placeholder="1204" required>
+              </label>
+              <label>
+                <span>Country</span>
+                <input type="text" name="country" placeholder="Switzerland" required>
+              </label>
+              <label>
+                <span>Delivery Preference</span>
+                <select name="delivery">
+                  <option value="concierge">White-glove concierge</option>
+                  <option value="insured">Insured express shipping</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <p class="form-label">Payment</p>
+            <div class="field-grid">
+              <label class="field-span-2">
+                <span>Cardholder Name</span>
+                <input type="text" name="cardName" placeholder="Arthur Delacroix" required>
+              </label>
+              <label class="field-span-2">
+                <span>Card Number</span>
+                <input type="text" name="cardNumber" placeholder="4242 4242 4242 4242" required>
+              </label>
+              <label>
+                <span>Expiry</span>
+                <input type="text" name="expiry" placeholder="09 / 29" required>
+              </label>
+              <label>
+                <span>CVC</span>
+                <input type="text" name="cvc" placeholder="123" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="checkout-actions">
+            <button class="button button-primary" type="submit">Confirm Purchase</button>
+            <p class="checkout-note">Encrypted payment placeholder for demonstration purposes.</p>
+          </div>
+        </form>
+
+        <aside class="checkout-summary reveal" data-checkout-summary></aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Trusted checkout with insured delivery and personal follow-up.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

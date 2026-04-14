@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | Athelgard</title>
+  <meta name="description" content="Browse the classic, sporty, and vintage collections from Athelgard in an editorial monochrome presentation.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="collections">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brandmark" href="index.html" aria-label="Athelgard home">
+        <span class="brandmark-word">ATHELGARD</span>
+        <span class="brandmark-tag">Swiss-Inspired Watch House</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html" class="is-current">Collections</a>
+        <a href="about.html">Craftsmanship</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-intro reveal">
+        <p class="section-kicker">Current House Edit</p>
+        <h1>Collections shaped for ceremony, momentum, and memory.</h1>
+        <p>
+          Browse the full Athelgard range through a showroom layout that gives every reference space to breathe.
+          Filter by mood, then enter the details.
+        </p>
+      </section>
+
+      <section class="filters-bar reveal" aria-label="Filter watches">
+        <button type="button" class="filter-button is-active" data-filter="all">All References</button>
+        <button type="button" class="filter-button" data-filter="classic">Classic</button>
+        <button type="button" class="filter-button" data-filter="sporty">Sporty</button>
+        <button type="button" class="filter-button" data-filter="vintage">Vintage</button>
+      </section>
+
+      <section class="collections-layout">
+        <aside class="collections-aside reveal">
+          <p class="section-kicker">Editorial Note</p>
+          <h2>Luxury begins with what is left out.</h2>
+          <p>
+            Each reference is presented with measured copy, generous negative space, and nothing competing with the
+            watch itself. The collection is meant to feel inspected, not scrolled past.
+          </p>
+          <a class="text-link" href="about.html">Explore the craft language</a>
+        </aside>
+        <div class="product-grid product-grid-collections" data-collection-grid></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Athelgard Watch House</p>
+      <p>Private showroom access by enquiry.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
